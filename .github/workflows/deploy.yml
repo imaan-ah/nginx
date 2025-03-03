@@ -20,6 +20,6 @@ jobs:
 
       - name: Build and Push Docker image
         run: |
-          docker build -t your-dockerhub-username/nginx-app .
-          docker tag your-dockerhub-username/nginx-app your-dockerhub-username/nginx-app:latest
-          docker push your-dockerhub-username/nginx-app:latest
+          docker build -t secrets.DOCKER_USERNAME/nginx-app .
+          docker tag secrets.DOCKER_USERNAME/nginx-app secrets.DOCKER_USERNAME/nginx-app:latest
+          docker push secrets.DOCKER_USERNAMEnginx-app:latest
